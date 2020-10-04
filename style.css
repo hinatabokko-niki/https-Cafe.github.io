@@ -12,26 +12,32 @@ body{
 
 a {
     text-decoration: none;
+    color: #432;
 }
 
 img {
     max-width: 100%;
 }
 
+li {
+	list-style: none;
+}
+
 .kakomi {
-	max-width: 1250px;
 	margin: auto;
 }
 
-/*header*/
+/*ヘッダ―*/
 .page-header {
 	box-shadow: 0 1px 10px -2px rgba(0, 0, 0, 1);
 	background-color: white;
 	max-width: 100%;
+	padding-right: 45px;
+	text-align: center;
 }
 
 .logo {
-	width: 230px;
+	width: 220px;
 }
 
 .wrapper {
@@ -42,10 +48,11 @@ img {
 .main-nav {
 	display: flex;
 	font-size: 1.25rem;
-	margin-top: 30px;
+	margin-top: 20px;
 	justify-content: center;
 	list-style: none;
 	text-transform: capitalize;
+	padding-bottom: 20px;
 
 }
 
@@ -62,63 +69,6 @@ img {
 	border-bottom: solid 2px #432;
 }
 
-/*home-content*/
-.home-content {
-	margin-bottom: 50px;
-	margin-top: 160px;
-	border-top: 1px solid #a9a9a9;
-}
-
-/*見出し*/
-.page-title {
-	font-size: 3rem;
-	font-weight: normal;
-	position: relative;
-	top: -.5em;
-	display: block;
-	max-width: 100%;
-	margin: 0 auto 2rem;
-}
-
-.page-title span {
-	display: inline-block;
-	background: #fff;
-}
-
-.conteiner {
-	display: flex;
-	justify-content: center;
-	margin: 0 auto;
-}
-
-.home-img {
-    width: 650px;
-    max-width: 100%;
-}
-
-.home-box {
-	margin-right: 30px;
-	width: 400px;
-    line-height: 1.87;
-    letter-spacing: 3.03px;
-}
-
-.home-text {
-	justify-content: center;
-	margin-top: 28px;
-}
-
-#txt {
-	text-align: center;
-	font-size: 1rem;
-	line-height: 2;
-	letter-spacing: 2.2px;
-}
-
-.aid {
-	margin-top: 15px;
-}
-
 /*大きな背景画像*/
 .big-bg {
 	background-size: cover;
@@ -132,7 +82,60 @@ img {
 
 #home {
 	background-image: url(img/page_top.jpg);
-	margin-top: 40px;
+	margin-top: 10px;
+}
+
+/*見出し*/
+.home-content {
+	margin-bottom: 50px;
+	margin-top: 110px;
+	border-top: 1px solid #a9a9a9;
+}
+
+.page-title {
+	font-size: 3rem;
+	font-weight: normal;
+	position: relative;
+	top: -0.8em;
+	display: block;
+	max-width: 100%;
+	margin: 0 auto 2rem;
+	text-align: center;
+}
+
+.page-title span {
+	display: inline-block;
+	background: #fff;
+}
+
+/*Cafe説明文*/
+.conteiner {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.home-img {
+    width: 650px;
+    max-width: 100%;
+}
+
+.home-box {
+	width: 400px;
+}
+
+.home-text {
+	margin-top: 32px;
+}
+
+#txt {
+	font-size: 1rem;
+	line-height: 2;
+	letter-spacing: 2.2px;
+}
+
+.aid {
+	margin-top: 15px;
 }
 
 /*トップページNEWSコンテンツ*/
@@ -164,7 +167,8 @@ img {
 }
 
 .news-contena {
-	border-left: solid 1px #432;
+	border: solid 0.8px #432;
+	margin: 20px;
 }
 
 .news {
@@ -205,84 +209,143 @@ img {
 
 .text-center {
 	text-align: center;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
 }
 
 .btn-common {
+	color: #fff;
+	background-color: #432;
+	font-size: 16px;
+	text-decoration: none;
+	padding: 20px 50px 20px;
+	border-radius: 10px;
+}
+/*.btn-common {
 	position: relative;
     display: inline-block;
-	padding: 50px 10px 13px 0;
+	padding: 10px 10px 13px 0;
     font-size: 12px;
     line-height: 2.33;
     letter-spacing: 2.42px;
     color: #432;
-}
+}*/
 
-.btn-common:after {
+/*.btn-common:after {
 	bottom: 10px;
-	padding: 5.5px 70px;
+	padding: 3px 50px;
 	transition: padding-right 0.3s;
 	content: "";
     position: absolute;
     left: 0;
     border-style: solid;
-    border-width: 0 1px 1px 0;
     border-color: transparent #432 #432 transparent;
     -webkit-transform: skewX(47deg);
-    transform: skewX(47deg);
     -webkit-transform-origin: bottom left;
-    transform-origin: bottom left;
-}
+}*/
 
 .btn-common:hover {
-	opacity: 0.5;
+	box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 2);
 }
 
 /*トップページメニュー領域*/
-.sec-menu {
-	text-align: left;
-}
+.menu-contena {
+	margin-top: 100px;
+}	
 
-.line-menu {
-	width: 170px;
-	height: 2px;
-	background-color: #432;
-}
-
-.morning {
+.top-lunch {
 	width: 100%;
-	height: 500px;
-	background-color: #f3f3f2;
 	margin-top: 30px;
+	background-color: #f3f3f2;
+	
 }
 
-.morning h3 {
+.top-lunch h3 {
 	text-align: center;
-	letter-spacing: 10px;
+	font-size: 30px;
+	letter-spacing: 3px;
 }
 
+.mtxt {
+	text-align: center;
+	font-size: 12px;
+	margin-top: 40px;
+}
+
+.ltxt {
+	text-align: center;
+	font-size: 15px;
+
+}
+
+.my-slider {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.lnc {
+	padding: 20px;
+}
+
+/*トップページ文鳥紹介*/
+.bun-img {
+	width: 700px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.buntxt {
+	line-height: 4% 0;
+}
+
+/*アクセス領域*/
+#location {
+	padding: 4% 0;
+}
+
+#location .wrapper {
+	display: flex;
+}
+
+.location-info {
+	width: 22%;
+}
+
+.location-info p {
+	padding: 12px 10px;
+	margin-bottom: 30px;
+    padding-left: 10px;
+    font-size: 13px;
+    line-height: 2.31;
+    letter-spacing: 2.63px;
+}
 /*フッター領域*/
 #footer {
 	width: 100%;
     background-color: #432;
 	text-align: center;
-	margin-top:400px;
-	padding-top: 80px;
-	padding-bottom: 80px;
+	margin-top:200px;
+	padding-top: 40px;
+	padding-bottom: 20px;
 }
 
 #footer_contact {
-	margin-bottom: 80px;
+	margin-bottom: 40px;
 }
 
 #footer_contact img {
-	width: 320px;
-	margin-right: 45px;
+	width: 250px;
+	margin-right: 55px;
 }
 
 .tel {
 	color: #fff;
 	text-align: center;
 	letter-spacing: 2px;
+	padding-top: 10px;
 }
 
 .contact {
@@ -306,7 +369,7 @@ img {
 }
 
 #sns {
-	margin-bottom: 80px;
+	margin-bottom: 40px;
 }
 
 #sns i {
@@ -538,15 +601,44 @@ aside {
 }
 
 /*メニューページ*/	
+.menu-title {
+	font-size: 60px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.food {
+	padding: 10px;
+}
+
 #menu {
-	background-image: url(img/food1.jpg);
+	padding: 30px;
+}
+
+.menu-txt {
+	margin-left: 10px;
+	font-size: 25px;
+}
+
+.type {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.type-contena {
+	height: 500px;
+	font-size: 3em;
+	font-weight: bold;
+	padding: 50px 25px;
+	text-align: center;
 }
 
 /*お問い合わせページ*/
 /*フォーム*/
-.wrapper {
+/*.wrapper {
 	text-align: center;
-}
+}*/
 
 form div {
 	margin-bottom: 14px;
@@ -611,3 +703,35 @@ input[type="submit"] {
 		max-width: 100%;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
